@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 // hooks imports
 import useMobile from "../../../Hooks/IsMobileHook";
 
-export default function Header() {
+function Header() {
   const isMobile = useMobile();
   const [showCart, setShowCart] = React.useState(false);
   return (
@@ -20,3 +20,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default React.memo(Header);

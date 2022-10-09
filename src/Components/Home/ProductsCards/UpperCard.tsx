@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// components import
+import LazyLoadImg from "../../Common/LazyLoadImg";
+
 type UpperCardProps = {
   id: number;
   productImg: string;
@@ -17,10 +20,10 @@ function UpperCard({
   return (
     <div className="flex sm:flex-row flex-col sm:justify-center items-center bg-primaryOrange text-primaryWhite rounded-[8px] sm:py-0 py-2 border-2 border-solid border-green">
       <div className="max-w-[400px] h-[400px] w-full">
-        <img
+        <LazyLoadImg
           src={productImg}
           alt={productName}
-          className="w-[100%] h-[100%] object-cover"
+          classes="w-[100%] h-[100%] object-cover"
         />
       </div>
       <div className="max-w-[400px] flex flex-col justify-center sm:px-8">

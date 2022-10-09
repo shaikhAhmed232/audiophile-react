@@ -27,7 +27,7 @@ function CartSummary({ shippingInput, billingInput }: SummaryProps) {
   }
   return (
     <div
-      className={`bg-white shadow-dimShadow p-4 ss:w-[30%] max-h-[450px] w-full ss:mt-0 mt-6`}
+      className={`bg-white shadow-dimShadow p-4 ss:w-[30%] max-h-[550px] w-full ss:mt-0 mt-6`}
     >
       <h3 className="text-[1rem] uppercase font-[700] font-barlow">summary</h3>
       <CartProducts isSummary={true} products={products} />

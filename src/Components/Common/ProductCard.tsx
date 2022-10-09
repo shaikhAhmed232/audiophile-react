@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+// components import
+import LazyLoadImg from "./LazyLoadImg";
+
 // local imports
 import { ProductType } from "../../data";
 
@@ -8,10 +11,10 @@ function ProductCard({ id, productImg, productName }: ProductType) {
   const navigate = useNavigate();
   return (
     <div className="grid bg-dimWhite rounded-[8px]">
-      <img
+      <LazyLoadImg
         src={productImg}
         alt="product"
-        className="w-[100%] aspect-square object-cover"
+        classes="w-[100%] aspect-square object-cover"
       />
       <div className="py-2 text-center">
         <p className="font-[700] font-barlow">{productName}</p>

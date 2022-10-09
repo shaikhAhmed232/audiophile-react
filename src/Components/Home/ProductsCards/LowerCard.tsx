@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// components import
+import LazyLoadImg from "../../Common/LazyLoadImg";
+
 function LowerCard({
   id,
   productName,
@@ -13,10 +16,10 @@ function LowerCard({
   return (
     <div className="flex sm:flex-row flex-col sm:justify-between mt-5">
       <div className="sm:w-[50%] h-[250px] w-[100%] bg-primaryBlack mr-[10px] rounded-[8px]">
-        <img
+        <LazyLoadImg
           src={productImg}
           alt={productName}
-          className="w-[100%] h-[100%] object-contain"
+          classes="w-[100%] h-[100%] object-contain"
         />
       </div>
       <div className="sm:w-[50%] flex items-center justify-center flex-col w-full bg-dimWhite rounded-[8px] sm:ml-[10px] ml-0 sm:mt-0 mt-3">

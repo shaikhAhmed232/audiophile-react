@@ -14,7 +14,7 @@ function Links({ navIsOpen, toggleNav }: LinksProps) {
     <ul
       className={`sm:flex ${
         navIsOpen
-          ? "flex z-[3] absolute bg-secondaryBlack w-[200px] justify-center rounded-[5px] shadow translate-x-[2px] animate-nav"
+          ? "flex z-[3] absolute bg-secondaryBlack w-[200px] justify-center rounded-[5px] shadow translate-x-[2px] animate-nav text-center"
           : "hidden"
       } sm:flex-row flex-col list-none`}
     >
@@ -22,7 +22,11 @@ function Links({ navIsOpen, toggleNav }: LinksProps) {
         <li
           key={link.id}
           className={`text-primaryWhite font-barlow py-5 ${
-            index === 0 ? "pr-7" : index === links.length - 1 ? "pl-7" : "px-7"
+            index === 0
+              ? "md:pr-7 pr-0"
+              : index === links.length - 1
+              ? "md:pl-7 pl-0"
+              : "md:px-7 px-0"
           } hover:text-primaryOrange active:text-primaryOrange transition-all cursor-pointer text-center`}
           onClick={toggleNav}
         >

@@ -2,6 +2,7 @@ import React from "react";
 
 // components import
 import Container from "../../Common/Container";
+import LazyLoadImg from "../../Common/LazyLoadImg";
 // Local imports
 import { styles } from "../../../style";
 import { manWidthHeadphonesUrl } from "../../../data";
@@ -28,10 +29,10 @@ function About() {
             </div>
           </div>
           <div className="sm:w-[50%] w-full sm:mt-0 mt-5 sm:mx-0 mx-auto">
-            <img
+            <LazyLoadImg
               src={manWidthHeadphonesUrl}
               alt={"man width headphones"}
-              className="w-[100%] h-[100%] object-contain rounded-[8px]"
+              classes="w-[100%] h-[100%] object-contain rounded-[8px]"
             />
           </div>
         </div>

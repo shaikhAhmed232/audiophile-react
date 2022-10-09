@@ -261,6 +261,8 @@ export const pickRandomProducts = () => {
     return randomProducts
 }
 
+export const loadingImgUrl = "https://cdn1.vectorstock.com/i/1000x1000/50/20/no-photo-or-blank-image-icon-loading-images-vector-37375020.jpg"
+
 export const manWidthHeadphonesUrl:string = "https://media.istockphoto.com/photos/africanamerican-ethnicity-person-at-the-studio-with-professional-picture-id1312006927?k=20&m=1312006927&s=612x612&w=0&h=KqT7bwse6G30D6WAEcvAam2uU145WzddxPg9ICilAco="
 
 export const productPageCommonColor:string = "https://images.indianexpress.com/2022/04/Urbanista-los-angeles-review-featured.jpg"

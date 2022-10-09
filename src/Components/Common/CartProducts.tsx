@@ -1,5 +1,8 @@
 import React from "react";
 
+// components import
+import LazyLoadImg from "./LazyLoadImg";
+
 // local import
 import { CartEachProductType } from "../../slices/cartSlice";
 import { ProductType } from "../../data";
@@ -64,10 +67,10 @@ function CartProducts({
         return (
           <div key={product.id} className="flex items-center">
             <div className="w-[40px] h-[40px] bg-primaryGray">
-              <img
+              <LazyLoadImg
                 src={product.productImg}
                 alt={product.productName}
-                className="w-full h-[100%]"
+                classes="w-full h-[100%]"
               />
             </div>
             <div className="flex-1 py-[2px] px-[5px]">

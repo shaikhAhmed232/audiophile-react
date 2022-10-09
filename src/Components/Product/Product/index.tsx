@@ -2,6 +2,7 @@ import React from "react";
 
 // components imports
 import Container from "../../Common/Container";
+import LazyLoadImg from "../../Common/LazyLoadImg";
 // local imports
 import { styles } from "../../../style";
 import { ProductType } from "../../../data";
@@ -16,10 +17,10 @@ function Product({ product }: { product: ProductType }) {
       <Container>
         <div className="flex sm:flex-row flex-col">
           <div className="sm:w-[400px] w-full h-[300px]">
-            <img
+            <LazyLoadImg
               src={product?.productImg}
               alt={product?.productName}
-              className="w-full h-[100%] object-contain"
+              classes="w-full h-[100%] object-contain"
             />
           </div>
           <div className="w-[100%] flex justify-center">

@@ -17,7 +17,7 @@ function Hero() {
     }
   }, []);
   return (
-    <section className="bg-primaryBlack text-primaryWhite">
+    <section className="bg-primaryBlack text-primaryWhite md:min-h-0 min-h-[400px]">
       <Container>
         <div className="flex relative justify-between sm:py-8 ss:py-3 py-0">
           <HeroDetails

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// components import
+import LazyLoadImg from "../../Common/LazyLoadImg";
+
 function MiddleCard({
   id,
   productName,
@@ -24,10 +27,10 @@ function MiddleCard({
         </Link>
       </div>
       <div className="w-[300px] h-[300px]">
-        <img
+        <LazyLoadImg
           src={productImg}
           alt={productName}
-          className="w-[100%] h-[100%] object-contain"
+          classes="w-[100%] h-[100%] object-contain"
         />
       </div>
     </div>
