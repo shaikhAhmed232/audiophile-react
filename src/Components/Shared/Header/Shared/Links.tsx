@@ -30,7 +30,9 @@ function Links({ navIsOpen, toggleNav }: LinksProps) {
           } hover:text-primaryOrange active:text-primaryOrange transition-all cursor-pointer text-center`}
           onClick={toggleNav}
         >
-          <Link to={`${link.link}`}>{link.name}</Link>
+          <Link role="navigation" to={`${link.link}`}>
+            {link.name}
+          </Link>
         </li>
       ))}
     </ul>

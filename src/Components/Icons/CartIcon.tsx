@@ -32,7 +32,10 @@ export default function CartIcon({
         />
       </svg>
       {totalProducts < 1 ? null : (
-        <div className="absolute bg-inherit text-primaryOrange font-[700] w-[20px] h-[20px] flex justify-center items-center rounded-full text-[1rem] right-[1px] top-[-10px]">
+        <div
+          data-testId="productCountInCart"
+          className="absolute bg-inherit text-primaryOrange font-[700] w-[20px] h-[20px] flex justify-center items-center rounded-full text-[1rem] right-[1px] top-[-10px]"
+        >
           {totalProducts}
         </div>
       )}

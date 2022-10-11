@@ -38,6 +38,7 @@ function Product({ product }: { product: ProductType }) {
                 Rs. {product?.productPrice}
               </strong>
               <button
+                data-testId="addToCartBtn"
                 className="block bg-primaryOrange text-primaryWhite mx-auto mt-2 py-[0.4rem] px-[1rem] rounded-[2px] tracking-[0.9px] uppercase"
                 onClick={() => dispatch(addProductIntoCart(product))}
               >
